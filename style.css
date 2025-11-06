@@ -29,31 +29,45 @@ nav .shortcuts {
 
 nav .shortcuts2 {
     display: flex;
-    gap: 1em;
+    gap: 1em auto;
     justify-content: center;
 }
 
 nav .s-button a {
     display: block;
-    margin: 6px;
-    min-width: 100px;
+    margin: 0.5em;
+    min-width: 6.5em;
+    min-height: 0.2em;
     font-family: "ubuntu";
     font-size: 1.25em;
     font-weight: 700;
     text-decoration: none;
-    background-color: #A6795D;
-    color: rgb(76, 46, 5);
-    padding: 10px;
+    background-color: #b47d5b;
+    color: rgba(0, 0, 0, 0.74);
+    padding: 6px;
     border-radius: 30px;
-    border: 2px red;
+    border: 5px solid rgba(255, 255, 255, 0.096);
     text-align: center;
+    align-items: center;
 }
 
-nav a:hover {
-    background: rgb(255, 241, 214);
-    background: linear-gradient(181deg, rgba(255, 241, 214, 1) 0%, rgba(255, 241, 214, 1) 51%);
-    transition: all 0.5s ease; 
-    color: rgb(175, 84, 10);
+.duotone-text {
+  
+}
+
+
+@media (max-width: 1000px) {
+    nav .s-button a {
+        font-size: 1em;
+        padding: 8px;
+        min-width: 6em;
+    }
+}
+
+nav .s-button a:hover {
+    color: rgb(255, 241, 214);
+    transition: all 0.44s ease;
+    background-color: rgb(175, 84, 10);
 }
 
 /*========================
@@ -63,11 +77,12 @@ nav a:hover {
 body .about {
     display: block;
     justify-content: center;
-    background-color: rgb(255, 241, 214);
+    background-color: rgb(247, 227, 188);
+    border: 5px solid #fff9c0b9;
     width: 67%;
     margin: 18px auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
     text-align: center;
     padding: 2em;
+    color: rgb(76, 46, 5);
 }
