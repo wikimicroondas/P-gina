@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Camino Paredes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="img/snowflake.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div card class="header-block">
+            <h1><i class="fa-solid fa-pencil"></i></h1>
+        </div>
+    </header>
+    <nav>
+        <div card class="shortcuts">
+            <div card class="shortcuts2">
+                <div card class="s-button">
+                    <a href="#about">Acerca de mí</a>
+                </div>
+                <div card class="s-button">
+                    <a href="#abilities">Habilidades</a>
+                </div>
+                <div card class="s-button">
+                    <a href="#experience">Experiencia</a>
+                </div>
+                <div card class="s-button">
+                    <a href="#contact">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="about">
+            <div card class="about">
+                <h1>Soy Alejandro C. Paredes</h1>
+                <h2>Acerca de mí</h2>
+                <img src="img/profile.png" width="190" height="270" alt="Foto de perfil de mi perro Shiro">
+                <p>Soy <strong>Alejandro Camino</strong>, actualente estudio Desarrollo de Aplicaciones Multiplataforma
+                </p>
+            </div>
+        </section>
+        <section id="abilities">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Coordinación</li>
+                <li>Trabajo en equipo</li>
+                <li>Adaptabilidad</li>
+                <li>Resolución de probleamas</li>
+                <li>Desarrollo
+                    <ol>
+                        <li>Lenguajes de programación: Java, Python, Rust</li>
+                        <li>Herramientas: Git, Github, GitLab, SQL</li>
+                        <li>Librerías: React, Node.js, Express</li>
+                        <li>Utilidad: VSC, Bash, CMD, HTML, CSS</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2>Experiencia</h2>
+            <p>He formado parte de diversos proyectos, entre ellos <em>Paella Challenge</em>, <em>Blasphemous 3</em> y
+                <em>Spec Ops: The Line</em>. Videojuegos indie de producción Española.
+            </p>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p><a href="https://github.com/wikimicroondas" target="_blank"><img src="img/github.svg" alt="github"
+                        width="32" height="32" alt="Github"></a>
+                <a href="https://es.linkedin.com/" target="_blank"><img src="img/linkedin.svg" width="32"
+                        height="32"></a>
+                <a href="mailto:janbarrabajadro@gmail.com"><img src="img/mail.svg" width="32" height="32"
+                        alt="LinkedIn"></a>
+            </p>
+            <h2>Envíame un mensaje</h2>
+            <form>
+                <p>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" placeholder="Escribe tu nombre" required />
+                </p>
+                <p>
+                    <label for="mail">Correo: </label>
+                    <input type="email" name="mail" id="mail" placeholder="Ejemplo@correo.com" required />
+                </p>
+                <p>
+                    <label for="comments">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" cols="33" placeholder="Escribe tu mensaje aquí"
+                        required></textarea>
+                </p>
+                <p>
+                    <button type="submit">Enviar</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Alejandro Camino. Contacto: janbarrabajadro@gmail.com</p>
+    </footer>
+</body>
+
+</html>

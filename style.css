@@ -1,0 +1,73 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(76, 46, 5);
+}
+
+/*========================
+            Header
+=========================*/
+
+header .header-block {
+    color: white;
+    text-align: center;
+    height: 70px;
+    line-height: 4.5em;
+}
+
+/*========================
+            Nav
+=========================*/
+
+nav .shortcuts {
+    display: block;
+    background-color: rgb(175, 84, 10);
+    max-width: 67%;
+    border-radius: 67px;
+    margin: 0 auto;
+}
+
+nav .shortcuts2 {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+nav .s-button a {
+    display: block;
+    margin: 6px;
+    min-width: 100px;
+    font-family: "ubuntu";
+    font-size: 1.25em;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #A6795D;
+    color: rgb(76, 46, 5);
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px red;
+    text-align: center;
+}
+
+nav a:hover {
+    background: rgb(255, 241, 214);
+    background: linear-gradient(181deg, rgba(255, 241, 214, 1) 0%, rgba(255, 241, 214, 1) 51%);
+    transition: all 0.5s ease; 
+    color: rgb(175, 84, 10);
+}
+
+/*========================
+            Body
+=========================*/
+
+body .about {
+    display: block;
+    justify-content: center;
+    background-color: rgb(255, 241, 214);
+    width: 67%;
+    margin: 18px auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding: 2em;
+}
