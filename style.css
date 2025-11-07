@@ -2,44 +2,68 @@ html, body {
     margin: 0px;
     padding: 0px;
     background-color: rgb(76, 46, 5);
+    font-family: 'ubuntu';
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 /*========================
             Header
 =========================*/
 
-header .header-block {
+.header-block {
     color: white;
     text-align: center;
-    height: 70px;
-    line-height: 4.5em;
+    height: 80px;
+    line-height: 4em;
+}
+
+.presentation h1{
+    display: block;
+    color: rgb(255, 241, 214);
+    text-align: center;
+    margin-top: 10em;
 }
 
 /*========================
             Nav
 =========================*/
 
-nav .shortcuts {
+nav {
+    position: sticky;
+    top: 15px;
+    z-index: 1000;
+}
+
+@media (max-width: 810px) {
+    nav {
+        top: 0px;
+    }
+}
+
+.shortcuts {
     display: block;
     background-color: rgb(175, 84, 10);
     max-width: 67%;
     border-radius: 67px;
     margin: 0 auto;
+    margin-bottom: 29em;
 }
 
-nav .shortcuts2 {
+.shortcuts2 {
     display: flex;
+    flex-wrap: wrap;
     gap: 1em auto;
     justify-content: center;
 }
 
-nav .s-button a {
+.s-button a {
     display: block;
     margin: 0.5em;
     min-width: 6.5em;
     min-height: 0.2em;
     font-family: "ubuntu";
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 700;
     text-decoration: none;
     background-color: #b47d5b;
@@ -51,20 +75,15 @@ nav .s-button a {
     align-items: center;
 }
 
-.duotone-text {
-  
-}
-
-
 @media (max-width: 1000px) {
     nav .s-button a {
         font-size: 1em;
-        padding: 8px;
-        min-width: 6em;
+        padding: 1px;
+        min-width: 6em auto;
     }
 }
 
-nav .s-button a:hover {
+.s-button a:hover {
     color: rgb(255, 241, 214);
     transition: all 0.44s ease;
     background-color: rgb(175, 84, 10);
@@ -74,15 +93,113 @@ nav .s-button a:hover {
             Body
 =========================*/
 
-body .about {
-    display: block;
-    justify-content: center;
+section {
     background-color: rgb(247, 227, 188);
     border: 5px solid #fff9c0b9;
     width: 67%;
+    height: auto;
     margin: 18px auto;
     border-radius: 10px;
-    text-align: center;
     padding: 2em;
     color: rgb(76, 46, 5);
+}
+
+.divisor {
+    border: none;
+    height: 2px;
+    background-color: rgba(85, 26, 26, 0.158);
+    margin: 1em 0px;
+}
+
+.text {
+    line-height: 1.5em;
+    margin-right: 20px;
+    text-align: left;
+}
+
+/*--about--*/
+
+.about-content {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    
+}
+
+@media (max-width: 900px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content img {
+        max-width: 80%;
+        margin-bottom: 1em;
+    }
+}
+ 
+.about-content img {
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.about-buttons {
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+    gap: 1em;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.about-buttons a {
+    text-decoration: none;
+    display: flex;
+    border-radius: 50%;
+    padding: 8px;
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(247, 227, 188);
+    background-color: rgba(77, 31, 12);
+    font-size: 1.2em;
+}
+
+.about-buttons a:hover {
+    background-color: rgb(175, 84, 10);
+}
+
+/*--abilities--*/
+
+section#abilities h2 {
+    font-size: 1.9em;
+    line-height: 0px;
+}
+
+
+
+/*--experience--*/
+
+section#experience h2 {
+    font-size: 1.9em;
+    line-height: 0px;
+}
+
+/*--contact--*/
+
+section#contact h2 {
+    font-size: 1.9em;
+    line-height: 0px;
+}
+
+/*========================
+          Footer
+=========================*/
+
+footer {
+    display: block;
+    text-align: center;
+    color: rgb(255, 241, 214);
 }
