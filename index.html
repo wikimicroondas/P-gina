@@ -59,67 +59,106 @@
         <section id="abilities">
             <h2>Habilidades</h2>
             <hr card class="divisor">
-            <div class="text">
-                <h3>Personales</h3>
-                <ul>
-                    <li>Coordinación</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Adaptabilidad</li>
-                    <li>Resolución de probleamas</li>
-                    <li>Desarrollo
-                        <ol>
-                            <li>Lenguajes de programación: Java, Python, Rust</li>
-                            <li>Herramientas: Git, Github, GitLab, SQL</li>
-                            <li>Librerías: React, Node.js, Express</li>
-                            <li>Utilidad: VSC, Bash, CMD, HTML, CSS</li>
-                        </ol>
-                    </li>
-                </ul>
+            <div card class="abilities-grid">
+                <h3>Profesionales</h3>
+                <div card class="text">
+                    <ul>
+                        <li>Coordinación</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Adaptabilidad</li>
+                        <li>Resolución de problemas</li>
+                        <li>Desarrollo</li>
+                    </ul>
+                </div>
+                <h3>Técnicas</h3>
+                <div card class="text">
+                    <ol>
+                        <li>Lenguajes de programación: Java, Python, Rust</li>
+                        <li>Herramientas: Git, Github, GitLab, SQL</li>
+                        <li>Librerías: React, Node.js, Express</li>
+                        <li>Utilidad: VSC, Bash, CMD, HTML, CSS, JS</li>
+                        <li>Ofimática: Microsoft 365, Certificado MOS-210</li>
+                    </ol>
+                </div>
             </div>
         </section>
         <section id="experience">
             <h2>Experiencia
                 <hr card class="divisor">
             </h2>
-            <p>He formado parte de diversos proyectos, entre ellos <em>Paella Challenge</em>, <em>Blasphemous 3</em> y
-                <em>Spec Ops: The Line</em>. Videojuegos indie de producción Española.
-            </p>
+            <div class card="text">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Empresa</th>
+                            <th>Cargo</th>
+                            <th>Rol</th>
+                            <th>Ref</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Aldanan</td>
+                            <td>Líder de proyecto</td>
+                            <td>Analista programador</td>
+                            <td class="t-button"><a href="./documents/Requerimientos-de-software-ALDANAN.pdf"
+                                    target="_blank"><i class="fa-solid fa-plus"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Serem</td>
+                            <td>Gestor de problemas</td>
+                            <td>Asistencia técnica</td>
+                            <td class="t-button"><a><i class="fa-solid fa-plus"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Adeco</td>
+                            <td>Diseñador de BBDD</td>
+                            <td>Arquitecto de BBDD </td>
+                            <td class="t-button"><a><i class="fa-solid fa-plus"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
         <section id="contact">
-            <h2>Contacto
-                <hr card class="divisor">
-            </h2>
-            <p><a href="https://github.com/wikimicroondas" target="_blank"><img src="img/github.svg" width="32"
-                        height="32" alt="Github"></a>
-                <a href="https://es.linkedin.com/" target="_blank"><img src="img/linkedin.svg" width="32"
-                        height="32"></a>
-                <a href="mailto:janbarrabajadro@gmail.com"><img src="img/mail.svg" width="32" height="32"
-                        alt="LinkedIn"></a>
-            </p>
-            <h2>Envíame un mensaje</h2>
-            <form>
-                <p>
-                    <label for="name">Nombre:</label>
-                    <input type="text" name="name" id="name" placeholder="Escribe tu nombre" required />
+            <h2>Contacto</h2>
+            <hr card class="divisor">
+            <div card class="text">
+                <p><a href="https://github.com/wikimicroondas" target="_blank"><img src="img/github.svg" width="32"
+                            height="32" alt="Github"></a>
+                    <a href="https://es.linkedin.com/" target="_blank"><img src="img/linkedin.svg" width="32"
+                            height="32"></a>
+                    <a href="mailto:janbarrabajadro@gmail.com"><img src="img/mail.svg" width="32" height="32"
+                            alt="LinkedIn"></a>
                 </p>
-                <p>
-                    <label for="mail">Correo: </label>
-                    <input type="email" name="mail" id="mail" placeholder="Ejemplo@correo.com" required />
-                </p>
-                <p>
-                    <label for="comments">Mensaje:</label>
-                    <textarea id="message" name="message" rows="5" cols="33" placeholder="Escribe tu mensaje aquí"
-                        required></textarea>
-                </p>
-                <p>
-                    <button type="submit">Enviar</button>
-                </p>
-            </form>
+                <button id="toggle-form">Envíame un mensaje</button>
+                <div id="contact-form" class="hidden">
+                    <form>
+                        <p>
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="name" placeholder="Escribe tu nombre" required />
+                        </p>
+                        <p>
+                            <label for="mail">Correo: </label>
+                            <input type="email" name="mail" id="mail" placeholder="Ejemplo@correo.com" required />
+                        </p>
+                        <p>
+                            <label for="comments">Mensaje:</label>
+                            <textarea id="message" name="message" rows="5" cols="33"
+                                placeholder="Escribe tu mensaje aquí" required></textarea>
+                        </p>
+                        <p>
+                            <button type="submit">Enviar</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <p>© 2025 Alejandro C. Paredes</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>

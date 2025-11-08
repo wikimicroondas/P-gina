@@ -1,10 +1,11 @@
-html, body {
+html,
+body {
     margin: 0px;
     padding: 0px;
     background-color: rgb(76, 46, 5);
     font-family: 'ubuntu';
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
+    scroll-padding-top: 95px;
 }
 
 /*========================
@@ -18,7 +19,7 @@ html, body {
     line-height: 4em;
 }
 
-.presentation h1{
+.presentation h1 {
     display: block;
     color: rgb(255, 241, 214);
     text-align: center;
@@ -31,13 +32,13 @@ html, body {
 
 nav {
     position: sticky;
-    top: 15px;
+    top: 21px;
     z-index: 1000;
 }
 
 @media (max-width: 810px) {
     nav {
-        top: 0px;
+        top: 1px;
     }
 }
 
@@ -123,7 +124,7 @@ section {
     display: flex;
     gap: 3em;
     align-items: center;
-    
+
 }
 
 @media (max-width: 900px) {
@@ -137,7 +138,7 @@ section {
         margin-bottom: 1em;
     }
 }
- 
+
 .about-content img {
     max-width: 300px;
     object-fit: cover;
@@ -178,13 +179,72 @@ section#abilities h2 {
     line-height: 0px;
 }
 
+section#abilities .abilities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-left: -450px;
+    margin-bottom: 2em;
+}
 
+section#abilities .abilities-grid h3 {
+    text-align: right;
+}
+
+section#abilities .text {
+    display: flex;
+}
+
+@media (max-width: 900px) {
+    section#abilities .abilities-grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0px;
+    }
+
+    section#abilities .abilities-grid h3 {
+        text-align: center;
+    }
+}
 
 /*--experience--*/
 
 section#experience h2 {
     font-size: 1.9em;
     line-height: 0px;
+}
+
+section#experience table {
+    line-height: 2em;
+    margin: 0px auto;
+    text-align: center;
+}
+
+section#experience table th {
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 8px;
+    padding: 0px 15px;
+}
+
+section#experience table td {
+    padding: 0px 30px;
+}
+
+@media (max-width: 900px) {
+    section#experience table td {
+        padding: 0px 15px;
+    }
+}
+
+.t-button a {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgb(76, 46, 5);
+    color: rgb(247, 227, 188);
+}
+
+.t-button a:hover {
+    background-color: rgb(175, 84, 10);
 }
 
 /*--contact--*/
