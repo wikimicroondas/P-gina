@@ -13,17 +13,17 @@ body {
 =========================*/
 
 .header-block {
-    color: white;
+    color: rgb(255, 241, 214);
     text-align: center;
     height: 80px;
-    line-height: 4em;
+    line-height: 5em;
 }
 
 .presentation h1 {
     display: block;
     color: rgb(255, 241, 214);
     text-align: center;
-    margin-top: 10em;
+    margin-top: 7em;
 }
 
 /*========================
@@ -33,7 +33,7 @@ body {
 nav {
     position: sticky;
     top: 21px;
-    z-index: 1000;
+    z-index: 10;
 }
 
 @media (max-width: 810px) {
@@ -49,6 +49,12 @@ nav {
     border-radius: 67px;
     margin: 0 auto;
     margin-bottom: 29em;
+}
+
+@media (max-width: 810px) {
+    .shortcuts {
+        max-width: 71%;
+    }
 }
 
 .shortcuts2 {
@@ -137,6 +143,10 @@ section {
         max-width: 80%;
         margin-bottom: 1em;
     }
+
+    .about-content h1 {
+        line-height: 1.3em;
+    }
 }
 
 .about-content img {
@@ -170,6 +180,10 @@ section {
 
 .about-buttons a:hover {
     background-color: rgb(175, 84, 10);
+}
+
+.about-buttons a:active {
+    background-color: rgb(196, 139, 92);
 }
 
 /*--abilities--*/
@@ -247,11 +261,135 @@ section#experience table td {
     background-color: rgb(175, 84, 10);
 }
 
+.t-button a:active {
+    background-color: rgb(196, 139, 92);
+}
+
 /*--contact--*/
 
 section#contact h2 {
     font-size: 1.9em;
     line-height: 0px;
+}
+
+#c-github, #c-linkedin, #c-mail {
+    background-color: rgb(76, 46, 5);
+    align-items: center;
+    padding: 4px 10px;
+}
+
+#c-github {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#c-mail {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.c-buttons a {
+    color: rgb(247, 227, 188);
+    font-size: 1.4em;
+}
+
+#c-github:hover, #c-linkedin:hover, #c-mail:hover {
+    background-color: rgb(175, 84, 10);
+}
+
+#c-github:active, #c-linkedin:active, #c-mail:active {
+    background-color: rgb(196, 139, 92);
+}
+
+#toggleForm {
+    display: block;
+    background-color: rgb(76, 46, 5);
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+    color: rgb(247, 227, 188);
+    font-weight: 500;
+    transition: all 0.15s ease;
+}
+
+#toggleForm:hover {
+    background-color: rgb(175, 84, 10);
+}
+
+#toggleForm:active {
+    background-color: rgb(196, 139, 92);
+}
+
+/*--form--*/
+
+.contactForm {
+    background-color: white;
+    margin: 0px auto;
+    padding: 2em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contactFormInside {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    width: 300px;
+    margin-left: 20%;
+}
+
+@media (max-width: 900px) {
+    .contactFormInside {
+        width: 310px;
+        margin-left: 10px;
+    }
+}
+
+.contactForm p {
+    font-family: 'ubuntu';
+    font-weight: 500;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'ubuntu';
+    font-size: 1em;
+}
+
+.submit-button {
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.518);
+    border-radius: 10px;
+    padding: 5px 20px;
+    justify-content: center;
+}
+
+.submit-button:hover {
+    background-color: rgba(128, 128, 128, 0.118);
+}
+
+.submit-button:active {
+    background-color: rgba(128, 128, 128, 0.203);
+}
+
+.hide {
+  display: none;
+}
+
+/*--animación--*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
 }
 
 /*========================

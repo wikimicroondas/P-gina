@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="img/snowflake.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -123,33 +126,34 @@
         <section id="contact">
             <h2>Contacto</h2>
             <hr card class="divisor">
+            <div class="c-buttons">
+                <a id="c-github" href="https://github.com/wikimicroondas" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a id="c-linkedin" href="https://es.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a id="c-mail" href="mailto:janbarrabajadro@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <p></p>
+            </div>
             <div card class="text">
-                <p><a href="https://github.com/wikimicroondas" target="_blank"><img src="img/github.svg" width="32"
-                            height="32" alt="Github"></a>
-                    <a href="https://es.linkedin.com/" target="_blank"><img src="img/linkedin.svg" width="32"
-                            height="32"></a>
-                    <a href="mailto:janbarrabajadro@gmail.com"><img src="img/mail.svg" width="32" height="32"
-                            alt="LinkedIn"></a>
-                </p>
-                <button id="toggle-form">Envíame un mensaje</button>
-                <div id="contact-form" class="hidden">
+                <a href="#messageForm" id="toggleForm" class="f-button">Envíame un mensaje</a>
+                <div class="contactForm" id="messageForm">
                     <form>
-                        <p>
-                            <label for="name">Nombre:</label>
-                            <input type="text" name="name" id="name" placeholder="Escribe tu nombre" required />
-                        </p>
-                        <p>
-                            <label for="mail">Correo: </label>
-                            <input type="email" name="mail" id="mail" placeholder="Ejemplo@correo.com" required />
-                        </p>
-                        <p>
-                            <label for="comments">Mensaje:</label>
-                            <textarea id="message" name="message" rows="5" cols="33"
-                                placeholder="Escribe tu mensaje aquí" required></textarea>
-                        </p>
-                        <p>
-                            <button type="submit">Enviar</button>
-                        </p>
+                        <div class="contactFormInside">
+                            <p>
+                                <label for="name">Nombre:</label>
+                            </p>
+                                <input type="text" name="name" id="name" placeholder="Escribe tu nombre" required />
+                            <p>
+                                <label for="mail">Correo: </label>
+                            </p>
+                                <input type="email" name="mail" id="mail" placeholder="Ejemplo@correo.com" required />
+                            <p>
+                                <label for="comments">Mensaje:</label>
+                            </p>
+                                <textarea id="message" name="message" rows="5" cols="33"
+                                    placeholder="Escribe tu mensaje aquí" required></textarea>
+                            <p>
+                                <button class="submit-button" type="submit">Enviar</button>
+                            </p>
+                        </div>
                     </form>
                 </div>
             </div>
