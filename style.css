@@ -313,7 +313,6 @@ section#contact h2 {
     color: rgb(247, 227, 188);
     font-weight: 500;
     transition: all 0.15s ease;
-    margin-bottom: 2em;
 }
 
 #toggleForm:hover {
@@ -343,7 +342,7 @@ section#contact h2 {
 
 @media (max-width: 900px) {
     .contactFormInside {
-        width: 310px;
+        width: auto;
         margin-left: 10px;
     }
 }
